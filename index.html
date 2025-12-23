@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Ateliê da Ana</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+
+<a href="https://wa.me/5599999999999" class="whatsapp">Agendar pelo WhatsApp</a>
+
+<body>
+
+<div>
+    <h1>Ateliê da Ana</h1>
+    <p>Cuidando das suas unhas com carinho e profissionalismo</p>
+</div>
+
+<div>
+    <h2>Sobre mim</h2>
+    <p>Sou manicure profissional, especializada em unhas tradicionais e alongamentos. Atendimento com horário marcado.</p>
+</div>
+
+<div>
+    <h2>Serviços</h2>
+    <div class="servicos">
+        <div>Manicure simples – R$ 30</div>
+        <div>Pedicure – R$ 35</div>
+        <div>Manicure + Pedicure – R$ 70</div>
+        <div>Alongamento em gel – R$ 120</div>
+    </div>
+</div>
+
+<div>
+    <h2>Contato</h2>
+
+    <form action="https://formspree.io/f/mbdrqrag" method="POST">
+
+        <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+
+        <input type="text" id="telefone" name="telefone" placeholder="Seu telefone" required>
+
+        <select id="servico" name="servico" required>
+            <option value="">Selecione um serviço</option>
+            <option value="Manicure simples">Manicure simples</option>
+            <option value="Pedicure">Pedicure</option>
+            <option value="Manicure + Pedicure">Manicure + Pedicure</option>
+            <option value="Alongamento em gel">Alongamento em gel</option>
+        </select>
+
+        <textarea id="mensagem-texto" name="mensagem" placeholder="Sua mensagem"></textarea>
+
+        <button type="submit">Enviar</button>
+<p id="feedback" class="mensagem"></p>
+
+    </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
